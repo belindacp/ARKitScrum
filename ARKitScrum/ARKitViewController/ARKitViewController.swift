@@ -10,24 +10,48 @@ import UIKit
 import SceneKit
 import ARKit
 
-class ViewController: UIViewController, ARSCNViewDelegate {
+class ARKitViewController: UIViewController, ARSCNViewDelegate {
 
+    @IBOutlet weak var AddButton: UIButton!
     @IBOutlet var sceneView: ARSCNView!
+    let session = ARSession()
+
+    var virtualObject = VirtualObject()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Set the view's delegate
+        // Prevent the screen from being dimmed after a while.
+        UIApplication.shared.isIdleTimerDisabled = true
+        
+        setupScene()
+        
+//        // Set the view's delegate
+//        sceneView.delegate = self
+//
+//        // Show statistics such as fps and timing information
+//        sceneView.showsStatistics = true
+//
+//        // Create a new scene
+//        let scene = SCNScene(named: "art.scnassets/ship.scn")!
+//
+//        // Set the scene to the view
+//        sceneView.scene = scene
+    }
+    
+    func setupScene() {
+        
+        //set the view's delegate to tell our sceneView that this class is its delegate
         sceneView.delegate = self
         
-        // Show statistics such as fps and timing information
-        sceneView.showsStatistics = true
+        //set the session
+        sceneView.session = session
         
-        // Create a new scene
-        let scene = SCNScene(named: "art.scnassets/ship.scn")!
+        //Enables multisample antialiasing with four samples per screen pixel.
+        sceneView.antialiasingMode = .multisampling4X
         
-        // Set the scene to the view
-        sceneView.scene = scene
+        sceneView.preferredFramesPerSecond = 60
+        sceneView.contentScaleFactor = 1.3
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -76,5 +100,18 @@ class ViewController: UIViewController, ARSCNViewDelegate {
     func sessionInterruptionEnded(_ session: ARSession) {
         // Reset tracking and/or remove existing anchors if consistent tracking is required
         
+    }
+    
+    
+    @IBAction func addModelObject(_ sender: Any) {
+        if !virtualObject.isPlaced {
+            addObject()
+        }
+    }
+    
+    func addObject() {
+        
+        virtualObject = VirtualObject(name: "art.scnassets/ship.scn")
+        virtualObject.loadModel()
     }
 }

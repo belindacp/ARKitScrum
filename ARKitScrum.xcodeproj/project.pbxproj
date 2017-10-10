@@ -7,12 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1A43E0A11F8B7723005F8AF1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A43E0A01F8B7723005F8AF1 /* AppDelegate.swift */; };
-		1A43E0A31F8B7723005F8AF1 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A43E0A21F8B7723005F8AF1 /* art.scnassets */; };
-		1A43E0A51F8B7723005F8AF1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A43E0A41F8B7723005F8AF1 /* ViewController.swift */; };
-		1A43E0A81F8B7723005F8AF1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A43E0A61F8B7723005F8AF1 /* Main.storyboard */; };
-		1A43E0AA1F8B7723005F8AF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A43E0A91F8B7723005F8AF1 /* Assets.xcassets */; };
-		1A43E0AD1F8B7723005F8AF1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A43E0AB1F8B7723005F8AF1 /* LaunchScreen.storyboard */; };
 		1A43E0B81F8B7723005F8AF1 /* ARKitScrumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A43E0B71F8B7723005F8AF1 /* ARKitScrumTests.swift */; };
 		1A43E0C31F8B7723005F8AF1 /* ARKitScrumUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A43E0C21F8B7723005F8AF1 /* ARKitScrumUITests.swift */; };
 /* End PBXBuildFile section */
@@ -36,19 +30,22 @@
 
 /* Begin PBXFileReference section */
 		1A43E09D1F8B7723005F8AF1 /* ARKitScrum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARKitScrum.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		1A43E0A01F8B7723005F8AF1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1A43E0A21F8B7723005F8AF1 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
-		1A43E0A41F8B7723005F8AF1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		1A43E0A71F8B7723005F8AF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		1A43E0A91F8B7723005F8AF1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		1A43E0AC1F8B7723005F8AF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		1A43E0AE1F8B7723005F8AF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1A43E0B31F8B7723005F8AF1 /* ARKitScrumTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ARKitScrumTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A43E0B71F8B7723005F8AF1 /* ARKitScrumTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARKitScrumTests.swift; sourceTree = "<group>"; };
 		1A43E0B91F8B7723005F8AF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1A43E0BE1F8B7723005F8AF1 /* ARKitScrumUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ARKitScrumUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A43E0C21F8B7723005F8AF1 /* ARKitScrumUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARKitScrumUITests.swift; sourceTree = "<group>"; };
 		1A43E0C41F8B7724005F8AF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A43E0E31F8CB0DB005F8AF1 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		1A43E0EB1F8CB108005F8AF1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ARKitScrum/AppDelegate.swift; sourceTree = SOURCE_ROOT; };
+		1A43E0EC1F8CB108005F8AF1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ARKitScrum/Assets.xcassets; sourceTree = SOURCE_ROOT; };
+		1A43E0ED1F8CB109005F8AF1 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; name = art.scnassets; path = ARKitScrum/art.scnassets; sourceTree = SOURCE_ROOT; };
+		1A43E0EE1F8CB109005F8AF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ARKitScrum/Info.plist; sourceTree = SOURCE_ROOT; };
+		1A43E0F01F8CB12A005F8AF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = ARKitScrum/Base.lproj/LaunchScreen.storyboard; sourceTree = SOURCE_ROOT; };
+		1A43E0F21F8CB12A005F8AF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = ARKitScrum/Base.lproj/Main.storyboard; sourceTree = SOURCE_ROOT; };
+		1A43E0F41F8CB18B005F8AF1 /* ARKitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARKitViewController.swift; sourceTree = "<group>"; };
+		1A43E0FF1F8CB18B005F8AF1 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		1A43E1021F8CB197005F8AF1 /* VirtualObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VirtualObject.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,15 +96,18 @@
 		1A43E09F1F8B7723005F8AF1 /* ARKitScrum */ = {
 			isa = PBXGroup;
 			children = (
-				1A43E0A01F8B7723005F8AF1 /* AppDelegate.swift */,
-				1A43E0A21F8B7723005F8AF1 /* art.scnassets */,
-				1A43E0A41F8B7723005F8AF1 /* ViewController.swift */,
-				1A43E0A61F8B7723005F8AF1 /* Main.storyboard */,
-				1A43E0A91F8B7723005F8AF1 /* Assets.xcassets */,
-				1A43E0AB1F8B7723005F8AF1 /* LaunchScreen.storyboard */,
-				1A43E0AE1F8B7723005F8AF1 /* Info.plist */,
+				1A43E1011F8CB197005F8AF1 /* Entity */,
+				1A43E0F31F8CB18B005F8AF1 /* ARKitViewController */,
+				1A43E0EF1F8CB12A005F8AF1 /* LaunchScreen.storyboard */,
+				1A43E0F11F8CB12A005F8AF1 /* Main.storyboard */,
+				1A43E0EB1F8CB108005F8AF1 /* AppDelegate.swift */,
+				1A43E0ED1F8CB109005F8AF1 /* art.scnassets */,
+				1A43E0EC1F8CB108005F8AF1 /* Assets.xcassets */,
+				1A43E0EE1F8CB109005F8AF1 /* Info.plist */,
+				1A43E0D81F8CB0DB005F8AF1 /* HomeViewController */,
 			);
-			path = ARKitScrum;
+			name = ARKitScrum;
+			path = ARKitScrum/HomeViewController;
 			sourceTree = "<group>";
 		};
 		1A43E0B61F8B7723005F8AF1 /* ARKitScrumTests */ = {
@@ -127,6 +127,129 @@
 			);
 			path = ARKitScrumUITests;
 			sourceTree = "<group>";
+		};
+		1A43E0D81F8CB0DB005F8AF1 /* HomeViewController */ = {
+			isa = PBXGroup;
+			children = (
+				1A43E0D91F8CB0DB005F8AF1 /* Interactor */,
+				1A43E0DB1F8CB0DB005F8AF1 /* Presenter */,
+				1A43E0DD1F8CB0DB005F8AF1 /* Protocols */,
+				1A43E0DF1F8CB0DB005F8AF1 /* Router */,
+				1A43E0E01F8CB0DB005F8AF1 /* View */,
+			);
+			name = HomeViewController;
+			sourceTree = "<group>";
+		};
+		1A43E0D91F8CB0DB005F8AF1 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		1A43E0DB1F8CB0DB005F8AF1 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		1A43E0DD1F8CB0DB005F8AF1 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		1A43E0DF1F8CB0DB005F8AF1 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		1A43E0E01F8CB0DB005F8AF1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1A43E0E31F8CB0DB005F8AF1 /* HomeViewController.swift */,
+				1A43E0E41F8CB0DB005F8AF1 /* Views */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1A43E0E41F8CB0DB005F8AF1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1A43E0F31F8CB18B005F8AF1 /* ARKitViewController */ = {
+			isa = PBXGroup;
+			children = (
+				1A43E0F41F8CB18B005F8AF1 /* ARKitViewController.swift */,
+				1A43E0F51F8CB18B005F8AF1 /* Interactor */,
+				1A43E0F71F8CB18B005F8AF1 /* Presenter */,
+				1A43E0F91F8CB18B005F8AF1 /* Protocols */,
+				1A43E0FB1F8CB18B005F8AF1 /* Router */,
+				1A43E0FC1F8CB18B005F8AF1 /* View */,
+			);
+			name = ARKitViewController;
+			path = ARKitScrum/ARKitViewController;
+			sourceTree = SOURCE_ROOT;
+		};
+		1A43E0F51F8CB18B005F8AF1 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		1A43E0F71F8CB18B005F8AF1 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		1A43E0F91F8CB18B005F8AF1 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		1A43E0FB1F8CB18B005F8AF1 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		1A43E0FC1F8CB18B005F8AF1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1A43E0FF1F8CB18B005F8AF1 /* HomeViewController.swift */,
+				1A43E1001F8CB18B005F8AF1 /* Views */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1A43E1001F8CB18B005F8AF1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1A43E1011F8CB197005F8AF1 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				1A43E1021F8CB197005F8AF1 /* VirtualObject.swift */,
+			);
+			name = Entity;
+			path = ARKitScrum/Entity;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -196,6 +319,7 @@
 				TargetAttributes = {
 					1A43E09C1F8B7723005F8AF1 = {
 						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 					1A43E0B21F8B7723005F8AF1 = {
@@ -235,10 +359,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1A43E0A31F8B7723005F8AF1 /* art.scnassets in Resources */,
-				1A43E0AD1F8B7723005F8AF1 /* LaunchScreen.storyboard in Resources */,
-				1A43E0AA1F8B7723005F8AF1 /* Assets.xcassets in Resources */,
-				1A43E0A81F8B7723005F8AF1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,8 +383,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1A43E0A51F8B7723005F8AF1 /* ViewController.swift in Sources */,
-				1A43E0A11F8B7723005F8AF1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,20 +418,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		1A43E0A61F8B7723005F8AF1 /* Main.storyboard */ = {
+		1A43E0EF1F8CB12A005F8AF1 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				1A43E0A71F8B7723005F8AF1 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		1A43E0AB1F8B7723005F8AF1 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1A43E0AC1F8B7723005F8AF1 /* Base */,
+				1A43E0F01F8CB12A005F8AF1 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		1A43E0F11F8CB12A005F8AF1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1A43E0F21F8CB12A005F8AF1 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -430,12 +548,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 876NNG3Z7M;
 				INFOPLIST_FILE = ARKitScrum/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kairosds.ARKitScrum;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ARKitScrum/HomeViewController/ARKitScrum-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -445,12 +566,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 876NNG3Z7M;
 				INFOPLIST_FILE = ARKitScrum/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kairosds.ARKitScrum;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ARKitScrum/HomeViewController/ARKitScrum-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -459,7 +582,6 @@
 		1A43E0CB1F8B7724005F8AF1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 876NNG3Z7M;
@@ -476,7 +598,6 @@
 		1A43E0CC1F8B7724005F8AF1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 876NNG3Z7M;
@@ -493,7 +614,6 @@
 		1A43E0CE1F8B7724005F8AF1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 876NNG3Z7M;
 				INFOPLIST_FILE = ARKitScrumUITests/Info.plist;
@@ -509,7 +629,6 @@
 		1A43E0CF1F8B7724005F8AF1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 876NNG3Z7M;
 				INFOPLIST_FILE = ARKitScrumUITests/Info.plist;
