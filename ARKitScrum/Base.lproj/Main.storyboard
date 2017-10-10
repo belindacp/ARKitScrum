@@ -8,41 +8,98 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue-Bold</string>
+        </array>
+        <array key="Papyrus.ttc">
+            <string>Papyrus</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Home View Controller-->
         <scene sceneID="pYa-Z8-AbP">
             <objects>
-                <viewController id="E0W-GH-Cf5" customClass="HomeViewController" sceneMemberID="viewController">
+                <viewController id="E0W-GH-Cf5" customClass="HomeViewController" customModule="ARKitScrum" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qje-Fi-JYp">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bienvenido" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jtb-RW-hqc">
+                                <rect key="frame" x="93" y="140" width="189" height="61"/>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="38"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.056369357638888888" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.62352941179999999" green="0.62352941179999999" blue="0.62352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <size key="shadowOffset" width="1" height="2"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yEK-fK-eUF">
+                                <rect key="frame" x="118.5" y="538" width="138" height="39"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="22"/>
+                                <state key="normal" title="Escanear QR"/>
+                                <connections>
+                                    <action selector="pushQRScannerVC" destination="E0W-GH-Cf5" eventType="touchUpInside" id="akd-ve-0yc"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.6578291174420019" green="0.88414596420218938" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="jtb-RW-hqc" firstAttribute="centerX" secondItem="qje-Fi-JYp" secondAttribute="centerX" id="20R-Yz-OAq"/>
+                            <constraint firstItem="yEK-fK-eUF" firstAttribute="centerX" secondItem="qje-Fi-JYp" secondAttribute="centerX" id="8cD-1p-owf"/>
+                            <constraint firstItem="pak-3k-LjT" firstAttribute="bottom" secondItem="yEK-fK-eUF" secondAttribute="bottom" constant="90" id="Vv7-9l-LGf"/>
+                            <constraint firstItem="jtb-RW-hqc" firstAttribute="top" secondItem="pak-3k-LjT" secondAttribute="top" constant="120" id="g7f-nm-moG"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="pak-3k-LjT"/>
                     </view>
+                    <connections>
+                        <outlet property="buttonQRScanner" destination="yEK-fK-eUF" id="ZQP-76-FCs"/>
+                        <segue destination="gLp-AF-ees" kind="show" identifier="segueToQRScanner" id="PoR-ng-qmy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p28-hG-u3X" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-697" y="33"/>
+            <point key="canvasLocation" x="-699" y="-78"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="uVm-36-smu">
+        <!--Scanner Controller-->
+        <scene sceneID="hDF-cq-WfR">
             <objects>
-                <viewController id="3Hf-bb-wW5" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="qFq-6h-wbt">
+                <viewController id="gLp-AF-ees" customClass="QRScannerController" customModule="ARKitScrum" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="41g-J3-vPk">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GqD-bV-iUN">
+                                <rect key="frame" x="0.0" y="607" width="375" height="60"/>
+                                <color key="backgroundColor" red="0.83387530985836267" green="0.83155123402438147" blue="0.83675047588832485" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="od7-uq-gfQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <viewLayoutGuide key="safeArea" id="EvL-tB-KZl"/>
+                        <constraints>
+                            <constraint firstItem="GqD-bV-iUN" firstAttribute="leading" secondItem="41g-J3-vPk" secondAttribute="leading" id="OuI-Gr-im6"/>
+                            <constraint firstItem="GqD-bV-iUN" firstAttribute="centerX" secondItem="41g-J3-vPk" secondAttribute="centerX" id="RZf-wi-qPf"/>
+                            <constraint firstAttribute="trailing" secondItem="GqD-bV-iUN" secondAttribute="trailing" id="dx2-gi-2Uw"/>
+                            <constraint firstItem="ifs-JU-Shn" firstAttribute="bottom" secondItem="GqD-bV-iUN" secondAttribute="bottom" id="qDz-WF-xlY"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ifs-JU-Shn"/>
                     </view>
+                    <connections>
+                        <outlet property="messageLabel" destination="GqD-bV-iUN" id="WUK-qQ-okp"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Mnk-ty-E2x" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qvW-HR-cXv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="26" y="33"/>
+            <point key="canvasLocation" x="292" y="-79"/>
         </scene>
         <!--Kit View Controller-->
         <scene sceneID="tXr-a1-R10">
             <objects>
-                <viewController id="BV1-FR-VrT" customClass="ARKitViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="arkitviewcontroller" id="BV1-FR-VrT" customClass="ARKitViewController" customModule="ARKitScrum" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IZG-IR-vcG">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>

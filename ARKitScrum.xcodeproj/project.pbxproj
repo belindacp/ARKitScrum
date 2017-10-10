@@ -9,6 +9,13 @@
 /* Begin PBXBuildFile section */
 		1A43E0B81F8B7723005F8AF1 /* ARKitScrumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A43E0B71F8B7723005F8AF1 /* ARKitScrumTests.swift */; };
 		1A43E0C31F8B7723005F8AF1 /* ARKitScrumUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A43E0C21F8B7723005F8AF1 /* ARKitScrumUITests.swift */; };
+		1A43E1031F8CBF86005F8AF1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A43E0F11F8CB12A005F8AF1 /* Main.storyboard */; };
+		1A43E1041F8CBF8B005F8AF1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A43E0EF1F8CB12A005F8AF1 /* LaunchScreen.storyboard */; };
+		1A51D6AD1F8CD684003632FE /* QRScannerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A51D6AB1F8CD16A003632FE /* QRScannerController.swift */; };
+		1AEF3E0A1F8CC391003804D6 /* ARKitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEF3E091F8CC391003804D6 /* ARKitViewController.swift */; };
+		1AEF3E0B1F8CC3B3003804D6 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A43E0E31F8CB0DB005F8AF1 /* HomeViewController.swift */; };
+		1AEF3E0C1F8CC3BD003804D6 /* VirtualObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A43E1021F8CB197005F8AF1 /* VirtualObject.swift */; };
+		1AEF3E0D1F8CC3BD003804D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A43E0EB1F8CB108005F8AF1 /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,9 +50,9 @@
 		1A43E0EE1F8CB109005F8AF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ARKitScrum/Info.plist; sourceTree = SOURCE_ROOT; };
 		1A43E0F01F8CB12A005F8AF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = ARKitScrum/Base.lproj/LaunchScreen.storyboard; sourceTree = SOURCE_ROOT; };
 		1A43E0F21F8CB12A005F8AF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = ARKitScrum/Base.lproj/Main.storyboard; sourceTree = SOURCE_ROOT; };
-		1A43E0F41F8CB18B005F8AF1 /* ARKitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARKitViewController.swift; sourceTree = "<group>"; };
-		1A43E0FF1F8CB18B005F8AF1 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		1A43E1021F8CB197005F8AF1 /* VirtualObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VirtualObject.swift; sourceTree = "<group>"; };
+		1A51D6AB1F8CD16A003632FE /* QRScannerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRScannerController.swift; sourceTree = "<group>"; };
+		1AEF3E091F8CC391003804D6 /* ARKitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARKitViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +103,7 @@
 		1A43E09F1F8B7723005F8AF1 /* ARKitScrum */ = {
 			isa = PBXGroup;
 			children = (
+				1A51D6A51F8CD16A003632FE /* QRScannerController */,
 				1A43E1011F8CB197005F8AF1 /* Entity */,
 				1A43E0F31F8CB18B005F8AF1 /* ARKitViewController */,
 				1A43E0EF1F8CB12A005F8AF1 /* LaunchScreen.storyboard */,
@@ -187,7 +195,6 @@
 		1A43E0F31F8CB18B005F8AF1 /* ARKitViewController */ = {
 			isa = PBXGroup;
 			children = (
-				1A43E0F41F8CB18B005F8AF1 /* ARKitViewController.swift */,
 				1A43E0F51F8CB18B005F8AF1 /* Interactor */,
 				1A43E0F71F8CB18B005F8AF1 /* Presenter */,
 				1A43E0F91F8CB18B005F8AF1 /* Protocols */,
@@ -229,7 +236,7 @@
 		1A43E0FC1F8CB18B005F8AF1 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				1A43E0FF1F8CB18B005F8AF1 /* HomeViewController.swift */,
+				1AEF3E091F8CC391003804D6 /* ARKitViewController.swift */,
 				1A43E1001F8CB18B005F8AF1 /* Views */,
 			);
 			path = View;
@@ -250,6 +257,63 @@
 			name = Entity;
 			path = ARKitScrum/Entity;
 			sourceTree = SOURCE_ROOT;
+		};
+		1A51D6A51F8CD16A003632FE /* QRScannerController */ = {
+			isa = PBXGroup;
+			children = (
+				1A51D6A61F8CD16A003632FE /* Interactor */,
+				1A51D6A71F8CD16A003632FE /* Presenter */,
+				1A51D6A81F8CD16A003632FE /* Protocols */,
+				1A51D6A91F8CD16A003632FE /* Router */,
+				1A51D6AA1F8CD16A003632FE /* View */,
+			);
+			name = QRScannerController;
+			path = ARKitScrum/QRScannerController;
+			sourceTree = SOURCE_ROOT;
+		};
+		1A51D6A61F8CD16A003632FE /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		1A51D6A71F8CD16A003632FE /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		1A51D6A81F8CD16A003632FE /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		1A51D6A91F8CD16A003632FE /* Router */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		1A51D6AA1F8CD16A003632FE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1A51D6AB1F8CD16A003632FE /* QRScannerController.swift */,
+				1A51D6AC1F8CD16A003632FE /* Views */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1A51D6AC1F8CD16A003632FE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
@@ -359,6 +423,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A43E1031F8CBF86005F8AF1 /* Main.storyboard in Resources */,
+				1A43E1041F8CBF8B005F8AF1 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -383,6 +449,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1AEF3E0C1F8CC3BD003804D6 /* VirtualObject.swift in Sources */,
+				1AEF3E0D1F8CC3BD003804D6 /* AppDelegate.swift in Sources */,
+				1A51D6AD1F8CD684003632FE /* QRScannerController.swift in Sources */,
+				1AEF3E0B1F8CC3B3003804D6 /* HomeViewController.swift in Sources */,
+				1AEF3E0A1F8CC391003804D6 /* ARKitViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -555,7 +626,6 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kairosds.ARKitScrum;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "ARKitScrum/HomeViewController/ARKitScrum-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -573,7 +643,6 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kairosds.ARKitScrum;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "ARKitScrum/HomeViewController/ARKitScrum-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -582,6 +651,7 @@
 		1A43E0CB1F8B7724005F8AF1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 876NNG3Z7M;
@@ -598,6 +668,7 @@
 		1A43E0CC1F8B7724005F8AF1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 876NNG3Z7M;
@@ -614,6 +685,7 @@
 		1A43E0CE1F8B7724005F8AF1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 876NNG3Z7M;
 				INFOPLIST_FILE = ARKitScrumUITests/Info.plist;
@@ -629,6 +701,7 @@
 		1A43E0CF1F8B7724005F8AF1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 876NNG3Z7M;
 				INFOPLIST_FILE = ARKitScrumUITests/Info.plist;
