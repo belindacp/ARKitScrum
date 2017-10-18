@@ -29,6 +29,11 @@ class QRScannerController: UIViewController, AVCaptureMetadataOutputObjectsDeleg
                         AVMetadataObject.ObjectType.pdf417,
                         AVMetadataObject.ObjectType.qr]
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.setNavigationBarHidden(false, animated: false)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

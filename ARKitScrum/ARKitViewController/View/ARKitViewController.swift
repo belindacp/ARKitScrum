@@ -23,7 +23,7 @@ class ARKitViewController: UIViewController, ARSCNViewDelegate {
         
         // Prevent the screen from being dimmed after a while.
         UIApplication.shared.isIdleTimerDisabled = true
-        
+
         setupScene()
         
 //        // Set the view's delegate

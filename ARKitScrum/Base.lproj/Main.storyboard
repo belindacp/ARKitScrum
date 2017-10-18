@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="E0W-GH-Cf5">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zRE-7B-dc7">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -26,7 +26,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bienvenido" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jtb-RW-hqc">
-                                <rect key="frame" x="93" y="140" width="189" height="61"/>
+                                <rect key="frame" x="93" y="184" width="189" height="61"/>
                                 <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="38"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.056369357638888888" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -51,16 +51,33 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="pak-3k-LjT"/>
                     </view>
+                    <navigationItem key="navigationItem" id="bEj-KG-EDA"/>
                     <connections>
                         <outlet property="buttonQRScanner" destination="yEK-fK-eUF" id="ZQP-76-FCs"/>
-                        <segue destination="gLp-AF-ees" kind="show" identifier="segueToQRScanner" id="PoR-ng-qmy"/>
+                        <segue destination="gLp-AF-ees" kind="show" identifier="segueToQRScanner" customClass="SegueFromLeft" customModule="ARKitScrum" customModuleProvider="target" action="showDetailViewController:sender:" id="spb-LX-byv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p28-hG-u3X" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-699" y="-78"/>
+            <point key="canvasLocation" x="-406" y="-80"/>
         </scene>
-        <!--Scanner Controller-->
+        <!--Navigation Controller-->
+        <scene sceneID="laR-Kz-hh1">
+            <objects>
+                <navigationController id="zRE-7B-dc7" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="nTh-Vy-qCv">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="E0W-GH-Cf5" kind="relationship" relationship="rootViewController" id="J4H-bW-kJe"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IZA-ka-doX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1346" y="-79"/>
+        </scene>
+        <!--Escanear QR-->
         <scene sceneID="hDF-cq-WfR">
             <objects>
                 <viewController id="gLp-AF-ees" customClass="QRScannerController" customModule="ARKitScrum" customModuleProvider="target" sceneMemberID="viewController">
@@ -81,20 +98,22 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="GqD-bV-iUN" firstAttribute="leading" secondItem="41g-J3-vPk" secondAttribute="leading" id="OuI-Gr-im6"/>
-                            <constraint firstItem="GqD-bV-iUN" firstAttribute="centerX" secondItem="41g-J3-vPk" secondAttribute="centerX" id="RZf-wi-qPf"/>
-                            <constraint firstAttribute="trailing" secondItem="GqD-bV-iUN" secondAttribute="trailing" id="dx2-gi-2Uw"/>
+                            <constraint firstItem="GqD-bV-iUN" firstAttribute="leading" secondItem="ifs-JU-Shn" secondAttribute="leading" id="OuI-Gr-im6"/>
+                            <constraint firstItem="ifs-JU-Shn" firstAttribute="trailing" secondItem="GqD-bV-iUN" secondAttribute="trailing" id="dx2-gi-2Uw"/>
                             <constraint firstItem="ifs-JU-Shn" firstAttribute="bottom" secondItem="GqD-bV-iUN" secondAttribute="bottom" id="qDz-WF-xlY"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ifs-JU-Shn"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Escanear QR" id="pUt-BS-ZNp">
+                        <barButtonItem key="backBarButtonItem" title="Atras" id="80p-cE-gK3"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="messageLabel" destination="GqD-bV-iUN" id="WUK-qQ-okp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qvW-HR-cXv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="292" y="-79"/>
+            <point key="canvasLocation" x="574" y="-80"/>
         </scene>
         <!--Kit View Controller-->
         <scene sceneID="tXr-a1-R10">
@@ -134,7 +153,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-698" y="703"/>
+            <point key="canvasLocation" x="34" y="664"/>
         </scene>
     </scenes>
 </document>

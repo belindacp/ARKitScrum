@@ -12,10 +12,12 @@
 		1A43E1031F8CBF86005F8AF1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A43E0F11F8CB12A005F8AF1 /* Main.storyboard */; };
 		1A43E1041F8CBF8B005F8AF1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A43E0EF1F8CB12A005F8AF1 /* LaunchScreen.storyboard */; };
 		1A51D6AD1F8CD684003632FE /* QRScannerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A51D6AB1F8CD16A003632FE /* QRScannerController.swift */; };
+		1A51D6B11F8E50CF003632FE /* SegueFromLeft.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A51D6B01F8E50CF003632FE /* SegueFromLeft.swift */; };
 		1AEF3E0A1F8CC391003804D6 /* ARKitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEF3E091F8CC391003804D6 /* ARKitViewController.swift */; };
 		1AEF3E0B1F8CC3B3003804D6 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A43E0E31F8CB0DB005F8AF1 /* HomeViewController.swift */; };
 		1AEF3E0C1F8CC3BD003804D6 /* VirtualObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A43E1021F8CB197005F8AF1 /* VirtualObject.swift */; };
 		1AEF3E0D1F8CC3BD003804D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A43E0EB1F8CB108005F8AF1 /* AppDelegate.swift */; };
+		D3DBAED55F8773A5F46A70B3 /* Pods_ARKitScrum.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E52B8D998B6B77F067E2B5D4 /* Pods_ARKitScrum.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,7 +54,11 @@
 		1A43E0F21F8CB12A005F8AF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = ARKitScrum/Base.lproj/Main.storyboard; sourceTree = SOURCE_ROOT; };
 		1A43E1021F8CB197005F8AF1 /* VirtualObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VirtualObject.swift; sourceTree = "<group>"; };
 		1A51D6AB1F8CD16A003632FE /* QRScannerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRScannerController.swift; sourceTree = "<group>"; };
+		1A51D6B01F8E50CF003632FE /* SegueFromLeft.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegueFromLeft.swift; sourceTree = "<group>"; };
 		1AEF3E091F8CC391003804D6 /* ARKitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARKitViewController.swift; sourceTree = "<group>"; };
+		1D5E21DEC42DFA7CF1975148 /* Pods-ARKitScrum.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARKitScrum.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ARKitScrum/Pods-ARKitScrum.debug.xcconfig"; sourceTree = "<group>"; };
+		55417B71C2E4EAE5668C748A /* Pods-ARKitScrum.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARKitScrum.release.xcconfig"; path = "Pods/Target Support Files/Pods-ARKitScrum/Pods-ARKitScrum.release.xcconfig"; sourceTree = "<group>"; };
+		E52B8D998B6B77F067E2B5D4 /* Pods_ARKitScrum.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ARKitScrum.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3DBAED55F8773A5F46A70B3 /* Pods_ARKitScrum.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +94,8 @@
 				1A43E0B61F8B7723005F8AF1 /* ARKitScrumTests */,
 				1A43E0C11F8B7723005F8AF1 /* ARKitScrumUITests */,
 				1A43E09E1F8B7723005F8AF1 /* Products */,
+				C6F266586B6A2EAA510AFED6 /* Pods */,
+				ACF4AF82EC4C51A00347CDDA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,6 +112,7 @@
 		1A43E09F1F8B7723005F8AF1 /* ARKitScrum */ = {
 			isa = PBXGroup;
 			children = (
+				1A51D6AF1F8E50BD003632FE /* Common */,
 				1A51D6A51F8CD16A003632FE /* QRScannerController */,
 				1A43E1011F8CB197005F8AF1 /* Entity */,
 				1A43E0F31F8CB18B005F8AF1 /* ARKitViewController */,
@@ -315,6 +325,32 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		1A51D6AF1F8E50BD003632FE /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				1A51D6B01F8E50CF003632FE /* SegueFromLeft.swift */,
+			);
+			name = Common;
+			path = ARKitScrum/Common;
+			sourceTree = SOURCE_ROOT;
+		};
+		ACF4AF82EC4C51A00347CDDA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E52B8D998B6B77F067E2B5D4 /* Pods_ARKitScrum.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C6F266586B6A2EAA510AFED6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1D5E21DEC42DFA7CF1975148 /* Pods-ARKitScrum.debug.xcconfig */,
+				55417B71C2E4EAE5668C748A /* Pods-ARKitScrum.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -322,9 +358,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1A43E0C71F8B7724005F8AF1 /* Build configuration list for PBXNativeTarget "ARKitScrum" */;
 			buildPhases = (
+				3415D41C6D82BC94AEC8A5E4 /* [CP] Check Pods Manifest.lock */,
 				1A43E0991F8B7723005F8AF1 /* Sources */,
 				1A43E09A1F8B7723005F8AF1 /* Frameworks */,
 				1A43E09B1F8B7723005F8AF1 /* Resources */,
+				EE2EC4F3F9F1BE2EB3FDDBAC /* [CP] Embed Pods Frameworks */,
+				4E1542F3C647B2404A539C7A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -444,11 +483,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3415D41C6D82BC94AEC8A5E4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		4E1542F3C647B2404A539C7A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ARKitScrum/Pods-ARKitScrum-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EE2EC4F3F9F1BE2EB3FDDBAC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ARKitScrum/Pods-ARKitScrum-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1A43E0991F8B7723005F8AF1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A51D6B11F8E50CF003632FE /* SegueFromLeft.swift in Sources */,
 				1AEF3E0C1F8CC3BD003804D6 /* VirtualObject.swift in Sources */,
 				1AEF3E0D1F8CC3BD003804D6 /* AppDelegate.swift in Sources */,
 				1A51D6AD1F8CD684003632FE /* QRScannerController.swift in Sources */,
@@ -617,6 +705,7 @@
 		};
 		1A43E0C81F8B7724005F8AF1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D5E21DEC42DFA7CF1975148 /* Pods-ARKitScrum.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -634,6 +723,7 @@
 		};
 		1A43E0C91F8B7724005F8AF1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55417B71C2E4EAE5668C748A /* Pods-ARKitScrum.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
